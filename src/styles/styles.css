@@ -1,0 +1,314 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "QualcommWeb", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+.preHeader {
+	background-color: #34495e;
+	color:white;
+	padding-left: 50px;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.dropdown{
+	float: right;
+	margin-right: 20px;
+}
+.dropdown .dropbtn {
+    font-size: 12px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 7px 7px 8px;
+    background-color: #34495e;
+}
+.dropdown-content {
+	font-size: 15px;
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	margin-top: -1px;
+	padding: 5px;
+	line-height: 1.5em;
+}
+.dropdown-content a {
+    color: #777;
+    padding: 4px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+	text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.main {
+	padding: 2px;
+	min-height: calc(100vh - 306px);
+	color: #777;
+}
+.customTable{
+	box-shadow: 0px 4px 12px #999;
+	margin-top: 15px;
+}
+.customTable th, .customTable td{
+    padding: 15px !important;
+}
+.customTable th {
+	background-color: #f2f2f2;
+}
+.customTable th:hover{
+	cursor: pointer;
+	background-color: #f2f2f2;
+}
+.customTable th i {
+	font-size: 15px;
+	font-weight: bold; 
+	margin-left: 10px;
+	color: #2980b9; 
+}
+
+nav ul li {
+	font-weight: bold;
+	font-size:16px;
+	padding: 0;
+	margin:0;
+}
+nav ul li a{
+	margin:0 8px 0 8px;
+}
+nav ul li a.active{
+	color: #2980b9 !important;
+	border-bottom: 3px solid #2980b9;
+	transition: all 2sec;
+}
+.navbar-default{
+	background-image: none !important;
+	box-shadow: none !important;
+}
+.homeContent {
+	border: 1px solid #efefef;
+	border-radius: 4px;
+	padding: 2px 8px 2px 8px;
+	font-size: 16px;
+	line-height:2em;
+}
+.homeContent span{
+	font-weight: bold;
+}
+/*Accordian code*/
+.accordion:hover{
+	cursor: pointer;
+  }
+  .accordion-heading a:hover {
+	  text-decoration: none;
+  }
+  .accordion-heading {
+	margin: 0;
+	background-color: #f7f7f9;
+	font-size: 1.2em;
+  }
+  .accordion-heading a {
+	position: relative;
+	display: block;
+	padding: 16px 24px;
+	color: #000;
+	text-decoration: none;
+  }
+  .accordion-heading a:before, .accordion-heading a:after {
+	position: absolute;
+	right: 36px;
+	display: block;
+	content: '';
+	width: 10px;
+	height: 2px;
+	background-color: #000;
+  }
+  .accordion-heading a:before {
+	top: 50%;
+  }
+  .accordion-heading a:after {
+	top: 50%;
+	transform: rotate(90deg);
+  }
+  .accordion-open .accordion-heading a:after {
+	display: none;
+  }
+  .accordion-open .accordion-heading {
+	background-color: #f2f2f2;
+  }
+  .accordion-content {
+	overflow: hidden;
+	height: 0;
+  }
+  .accordion-open .accordion-content {
+	height: auto;
+  }
+  
+  .list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-top: 1px solid #fff;
+  }
+  .list-item {
+	padding: 24px 36px;
+	overflow: hidden;
+	border-bottom: 2px solid #f7f7f9;
+  }
+  
+  .data {
+	margin: 0 24px 0 0;
+	float: left;
+  }
+  .data-right {
+	margin: 0;
+	float: right;
+  }
+  .data a {
+	text-decoration: none;
+	color: #da0028;
+	}
+	/*File upload css*/
+	.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+		cursor: pointer;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.btn-upload {
+	background-color: #fff;
+	color: #2980b9;
+	border-radius: 20px !important;
+	border: 2px solid #2980b9 !important;
+	font-weight: 600 !important;
+	cursor: pointer;
+}
+.uploadText {
+	color: #2980b9;
+}
+.deleteFile {
+	color: red;
+	font-size: 24px;
+	cursor: pointer;
+}
+.uploadMargin {
+	margin-top: 10px;
+	border: 2px dotted #f2f2f2;
+	padding: 50px;
+	background-color: #f2f2f7;
+}
+	/* Footer CSS*/
+.appFooter {
+	border-top: 1px solid #efefef;
+	background-color:#34495e;
+	margin-top: 15px;
+	padding:20px 0 0 50px;
+}
+.footer {
+	color: darkgray;
+	line-height: 1.5em;
+}	
+.footerText span{
+	padding: 10px;
+	color: white;
+	float: right;
+}
+.footerText span a{
+	color:snow;
+}
+.payment {
+	background-color: #27ae60;
+	padding: 12px 12px 12px 12px;
+	float: right;
+	margin-top: 30px;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 6px;
+}
+.payment:hover {
+	color: white;
+	text-decoration: none;
+}
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+	display: inline;
+	font-weight: bold;
+}
+.credit-card-box .form-control.error {
+	border-color: red;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+	font-weight: bold;
+	color: red;
+	padding: 2px 8px;
+	margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+	font-weight: bold;
+	color: red;
+	padding: 2px 8px;
+	margin-top: 2px;
+}
+.credit-card-box label {
+	display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+	display: table;
+}
+.credit-card-box .display-tr {
+	display: table-row;
+}
+.credit-card-box .display-td {
+	display: table-cell;
+	vertical-align: middle;
+	width: 50%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+	min-width: 180px;
+}
+.requestId {
+	font-size: 16px;
+	font-weight: 600;
+	color: #16a085;
+	margin-bottom: 20px;
+
+}
+.disablepayment {
+	background-color: #f2f2f2;
+	padding: 12px 12px 12px 12px;
+	float: right;
+	margin-top: 30px;
+	color: #aaa;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 6px;
+	cursor: not-allowed;
+}
